@@ -1,9 +1,10 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import UserInfo from "./components/UserInfo.tsx";
 import UserProfiles from "./components/UserProfiles.tsx";
 import UserActivities from "./components/UserActivities.tsx";
-import UserInfo from "./components/userInfo.tsx";
+
 import App from "./components/App.tsx";
 import "./index.css";
 
