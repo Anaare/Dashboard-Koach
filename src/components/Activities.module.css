@@ -31,25 +31,3 @@
   font-size: 1rem;
   margin-bottom: 10px;
 }
-
-.activitiesBtn {
-  border: 2px solid var(--text-color);
-  border-radius: 5px;
-  padding: 10px 15px;
-  background-color: transparent;
-  color: var(--text-color);
-  font-weight: bold;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.activitiesBtn:hover {
-  background-color: var(--text-color);
-  color: var(--primary-color);
-}
-
-.activitiesBtn:active {
-  background-color: var(--secondary-color);
-  border-color: var(--secondary-color);
-}

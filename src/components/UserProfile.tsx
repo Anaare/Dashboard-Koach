@@ -1,5 +1,6 @@
-import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from "./Profiles.module.css";
+
 interface UserProps {
   id: number;
   name: string;
@@ -17,7 +18,6 @@ export default function User({
   website,
   phone,
 }: UserProps) {
-  const navigate = useNavigate();
   return (
     <div className={styles["user-profile"]}>
       <div className={styles["user-profile-content"]}>
@@ -27,11 +27,15 @@ export default function User({
         <p>Email: {email}</p>
         <p>Website: {website}</p>
         <p>Phone: {phone}</p>
-        <button
-          className={styles.activitiesBtn}
-          onClick={() => navigate(`/userprofiles/${userId}`)}
-        >
-          activities
+        <button className={styles.activitiesBtn}>
+          <NavLink
+            to={`/userprofiles/${userId}`}
+            className={({ isActive }) =>
+              isActive ? `${styles.link} ${styles["active-link"]}` : styles.link
+            }
+          >
+            activities
+          </NavLink>
         </button>
       </div>
     </div>

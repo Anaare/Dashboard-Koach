@@ -36,7 +36,7 @@
   align-self: flex-start;
   border: 2px solid #fff;
   border-radius: 5px;
-  padding: 8px 12px;
+  padding: 4px 8px;
   background: transparent;
   color: #fff;
   font-weight: bolder;
@@ -48,4 +48,19 @@
   background: #355070;
   color: #fff;
   border: 3px solid transparent;
+}
+
+.link {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 1.1rem;
+}
+
+.active-link {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  text-decoration: underline;
 }
