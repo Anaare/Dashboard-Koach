@@ -1,0 +1,55 @@
+/* src/styles/activities.css */
+.activities-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.user-activities {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.user-activities:hover {
+  transform: translateY(-5px);
+}
+
+.user-activities h2 {
+  font-size: 1.5rem;
+}
+
+.user-activities h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.user-activities p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.activitiesBtn {
+  border: 2px solid var(--text-color);
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: transparent;
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.activitiesBtn:hover {
+  background-color: var(--text-color);
+  color: var(--primary-color);
+}
+
+.activitiesBtn:active {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}

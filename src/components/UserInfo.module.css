@@ -1,0 +1,39 @@
+.container {
+  background-color: #355070;
+  font-family: "Lato";
+  color: #fff;
+}
+
+h3 {
+  padding: 0 20px;
+  font-size: 25px;
+}
+
+.nav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activities {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  padding: 20px;
+}
+
+button {
+  padding: 7px 15px;
+  text-wrap: nowrap;
+  background: transparent;
+  border: 2px solid #b56576;
+  color: #fff;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #b56576;
+  text-decoration: underline;
+}
